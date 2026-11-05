@@ -1,0 +1,46 @@
+[org.gnome.desktop.interface]
+clock-format='12h'
+clock-show-date=true
+clock-show-weekday=true
+cursor-theme='Bibata-Modern-Ice'
+document-font-name='Noto Sans 11'
+font-antialiasing='rgba'
+font-name='Adwaita Sans 11'
+gtk-theme='adw-gtk3'
+icon-theme='Hatter'
+monospace-font-name='Adwaita Mono 11'
+
+[org.gnome.desktop.peripherals.touchpad]
+tap-to-click=true
+
+[org.gnome.desktop.sound]
+event-sounds=true
+input-feedback-sounds=true
+theme-name='Yaru'
+
+[org.gnome.desktop.wm.preferences]
+titlebar-uses-system-font=false
+titlebar-font='Adwaita Sans Bold 11'
+
+[org.gnome.shell]
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'arch-update@RaphaelRochet', 'blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'light-style@gnome-shell-extensions.gcampax.github.com']
+favorite-apps=['firefox.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Software.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.Settings.desktop']
+
+[org.gnome.shell.extensions.arch-update]
+package-manager='pamac-manager'
+
+[org.gnome.Terminal.Legacy.Settings]
+theme-variant='dark'
+
+[org.gnome.Terminal.Legacy.Profile]
+background-transparency-percent=20
+bold-is-bright=true
+use-system-font=false
+use-transparent-background=true
+font='SauceCodePro Nerd Font 11'
+
+[org.gtk.gtk4.Settings.FileChooser]
+sort-directories-first=true
+
+[org.gtk.settings.file-chooser]
+sort-directories-first=true
