@@ -8,12 +8,12 @@ echo "Installing Necessary components..."
 
 echo "Installing Necessary Fonts..."
 {
-    pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-hack ttf-dejavu ttf-liberation ttf-roboto ttf-roboto-mono ttf-ubuntu-font-family inter-font adwaita-fonts --noconfirm;
+    pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-hack ttf-dejavu ttf-liberation ttf-roboto ttf-roboto-mono ttf-ubuntu-font-family inter-font cantarell-fonts adwaita-fonts --noconfirm;
 }
 
 echo "Installing GNOME Desktop and Essential Apps..."
 {
-    pacman -S gnome dconf-editor gnome-tweaks gnome-shell-extensions gnome-shell-extension-appindicator libappindicator-gtk3 gnome-initial-setup lollypop gst-libav gst-plugins-base gst-plugins-ugly celluloid seahorse deja-dup rclone evolution evolution-spamassassin highlight drawing gufw tuned-ppd gnome-browser-connector adw-gtk-theme papers fwupd dialect gfeeds polari ttf-adwaitamono-nerd --noconfirm;
+    pacman -S gnome dconf-editor gnome-tweaks gnome-shell-extensions gnome-shell-extension-appindicator libappindicator-gtk3 gnome-extensions-app gnome-initial-setup lollypop gst-libav gst-plugins-base gst-plugins-ugly celluloid seahorse deja-dup rclone evolution evolution-spamassassin highlight drawing gufw tuned-ppd gnome-browser-connector adw-gtk-theme papers fwupd dialect gfeeds polari ttf-adwaitamono-nerd --noconfirm;
     pacman -S firefox firefox-i18n-ko libreoffice-fresh libreoffice-fresh-ko unixodbc postgresql-libs qt5ct qt6ct kvantum kvantum-qt5 --noconfirm;
     pacman -S aisleriot gnome-mines gnome-chess gnuchess gnome-sudoku quadrapassel gnome-mahjongg --noconfirm;
 }
@@ -68,13 +68,15 @@ echo "Installing Gaming Support..."
 
 echo "Install and Setup Extras..."
 {
-    pacman -S gnome-shell-extension-gsconnect gnome-shell-extension-arch-update gnome-shell-extension-dash-to-dock gnome-shell-extension-blur-my-shell pamac yay sshfs gnome-terminal-transparency limine-mkinitcpio-hook qadwaitadecorations-qt6 papirus-icon-theme papirus-folders ttf-sourcecodepro-nerd ttf-hack-nerd ttf-ubuntu-mono-nerd ttf-roboto-mono-nerd plymouth polkit-gnome yaru-sound-theme system-config-printer python-pysmbc --noconfirm;
+    pacman -S gnome-shell-extension-gsconnect gnome-shell-extension-arch-update gnome-shell-extension-dash-to-dock gnome-shell-extension-blur-my-shell mcmojave-cursors-git pamac yay sshfs gnome-terminal-transparency limine-mkinitcpio-hook qadwaitadecorations-qt6 papirus-icon-theme papirus-folders ttf-sourcecodepro-nerd ttf-hack-nerd ttf-ubuntu-mono-nerd ttf-roboto-mono-nerd plymouth polkit-gnome yaru-sound-theme system-config-printer python-pysmbc --noconfirm;
     papirus-folders -C adwaita;
-}
+    mkdir /usr/src/MoreWaita;
+    git clone https://github.com/somepaulo/MoreWaita /usr/src/MoreWaita;
+    sh /usr/src/MoreWaita/install.sh;
 
 echo "Installing Flatpak Necessary Packages..."
 {
-    flatpak install -y org.freedesktop.Platform/x86_64/25.08 org.kde.Platform/x86_64/6.9 org.kde.Platform/x86_64/6.10 org.kde.Platform/x86_64/5.15-25.08 org.gnome.Platform/x86_64/49 org.gnome.Platform/x86_64/50;
+    flatpak install -y org.freedesktop.Platform/x86_64/25.08 org.freedesktop.Platform/x86_64/26.08 org.kde.Platform/x86_64/6.9 org.kde.Platform/x86_64/6.10 org.kde.Platform/x86_64/5.15-25.08 org.gnome.Platform/x86_64/50 org.gnome.Platform/x86_64/51;
 }
 
 #echo "Setup snapper..."

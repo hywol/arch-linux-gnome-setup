@@ -6,12 +6,12 @@ picture-uri-dark='file:///usr/share/backgrounds/arch-wallpaper/archlinux-wallpap
 clock-format='12h'
 clock-show-date=true
 clock-show-weekday=true
-cursor-theme='Bibata-Modern-Ice'
+cursor-theme='mcmojave-cursors'
 document-font-name='Noto Sans 11'
 font-antialiasing='rgba'
 font-name='Adwaita Sans 11'
 gtk-theme='adw-gtk3'
-icon-theme='Hatter'
+icon-theme='MoreWaita'
 monospace-font-name='Adwaita Mono 11'
 
 [org.gnome.desktop.peripherals.touchpad]
