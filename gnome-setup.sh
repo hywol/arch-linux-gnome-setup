@@ -34,6 +34,7 @@ echo "Setup Desktop..."
     cp nanorc /etc/;
     cp zram-generator.conf /etc/systemd/;
     cp locale.gen /etc/;
+    locale-gen;
     echo 'LANG=en_US.UTF-8' > /etc/locale.conf;
     cp environment /etc;
     mkdir -p /usr/share/gnome/autostart;
