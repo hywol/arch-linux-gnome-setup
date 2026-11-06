@@ -13,7 +13,7 @@ echo "Installing Necessary Fonts..."
 
 echo "Installing GNOME Desktop and Essential Apps..."
 {
-    pacman -S gnome dconf-editor gnome-tweaks gnome-shell-extensions gnome-shell-extension-appindicator libappindicator-gtk3 gnome-extensions-app gnome-initial-setup lollypop gst-libav gst-plugins-base gst-plugins-ugly celluloid seahorse deja-dup rclone evolution evolution-spamassassin highlight drawing gufw tuned-ppd gnome-browser-connector adw-gtk-theme papers fwupd dialect gfeeds polari ttf-adwaitamono-nerd --noconfirm;
+    pacman -S gnome dconf-editor gnome-tweaks gnome-shell-extensions gnome-shell-extension-appindicator libappindicator-gtk3 gnome-extensions-app gnome-initial-setup lollypop gst-libav gst-plugins-base gst-plugins-ugly celluloid seahorse deja-dup rclone evolution evolution-spamassassin highlight resources drawing gufw tuned-ppd gnome-browser-connector adw-gtk-theme papers fwupd dialect gfeeds polari ttf-adwaitamono-nerd file-roller 7zip zip cdrtools unrar unace --noconfirm;
     pacman -S firefox firefox-i18n-ko libreoffice-fresh libreoffice-fresh-ko unixodbc postgresql-libs qt5ct qt6ct kvantum kvantum-qt5 --noconfirm;
     pacman -S aisleriot gnome-mines gnome-chess gnuchess gnome-sudoku quadrapassel gnome-mahjongg --noconfirm;
 }
