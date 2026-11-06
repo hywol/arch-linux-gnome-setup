@@ -73,6 +73,7 @@ echo "Install and Setup Extras..."
     mkdir /usr/src/MoreWaita;
     git clone https://github.com/somepaulo/MoreWaita /usr/src/MoreWaita;
     sh /usr/src/MoreWaita/install.sh;
+}
 
 echo "Installing Flatpak Necessary Packages..."
 {
