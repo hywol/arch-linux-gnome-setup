@@ -25,7 +25,7 @@ echo "Removing Bloatwares..."
 
 echo "Installing IME..."
 {
-    pacman -S fcitx5 fcitx5-hangul fcitx5-anthy fcitx5-qt fcitx5-gtk fcitx5-configtool --noconfirm;
+    pacman -S fcitx5 fcitx5-hangul fcitx5-chinese-addons fcitx5-anthy fcitx5-qt fcitx5-gtk fcitx5-configtool --noconfirm;
 }
 
 echo "Setup Desktop..."
@@ -48,7 +48,7 @@ echo "Setup Desktop..."
 
 echo "Enable multilib..."
 {
-    ./enable-multilib.sh
+    ./enable-multilib.sh;
 }
 
 echo "Setup Chaotic-AUR..."
@@ -63,7 +63,7 @@ echo "Installing Windows compatibility Layer..."
 
 echo "Installing Gaming Support..."
 {
-    pacman -S steam lutris innoextract vkd3d lib32-vkd3d vulkan-radeon lib32-vulkan-radeon lib32-gamemode gamemode gamescope mangohud --noconfirm;
+    ./gaming-support.sh;
 }
 
 echo "Install and Setup Extras..."
