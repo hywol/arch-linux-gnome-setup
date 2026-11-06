@@ -13,7 +13,7 @@ echo "Installing Necessary Fonts..."
 
 echo "Installing GNOME Desktop and Essential Apps..."
 {
-    pacman -S gnome dconf-editor gnome-tweaks gnome-shell-extensions gnome-shell-extension-appindicator libappindicator-gtk3 gnome-initial-setup lollypop gst-libav gst-plugins-base gst-plugins-ugly celluloid seahorse deja-dup rclone evolution evolution-spamassassin highlight drawing gufw tuned-ppd gnome-browser-connector adw-gtk-theme papers fwupd dialect gfeeds polari --noconfirm;
+    pacman -S gnome dconf-editor gnome-tweaks gnome-shell-extensions gnome-shell-extension-appindicator libappindicator-gtk3 gnome-initial-setup lollypop gst-libav gst-plugins-base gst-plugins-ugly celluloid seahorse deja-dup rclone evolution evolution-spamassassin highlight drawing gufw tuned-ppd gnome-browser-connector adw-gtk-theme papers fwupd dialect gfeeds polari ttf-adwaitamono-nerd --noconfirm;
     pacman -S firefox firefox-i18n-ko libreoffice-fresh libreoffice-fresh-ko unixodbc postgresql-libs qt5ct qt6ct kvantum kvantum-qt5 --noconfirm;
     pacman -S aisleriot gnome-mines gnome-chess gnuchess gnome-sudoku quadrapassel gnome-mahjongg --noconfirm;
 }
@@ -38,6 +38,9 @@ echo "Setup Desktop..."
     cp environment /etc;
     mkdir -p /usr/share/gnome/autostart;
     cp libcanberra-login-sound.desktop /usr/share/gnome/autostart;
+    mkdir -p /usr/share/backgrounds/arch-wallpaper;
+    cp archlinux-wallpaper.png /usr/share/backgrounds/arch-wallpaper;
+    cp arch-wallpaper.xml /usr/share/gnome-background-properties;
     chmod +x /usr/share/gnome/autostart/*;
     cp *override /usr/share/glib-2.0/schemas;
     glib-compile-schemas /usr/share/glib-2.0/schemas;

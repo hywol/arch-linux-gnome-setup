@@ -1,3 +1,7 @@
+[org.gnome.desktop.background]
+picture-uri='file:///usr/share/backgrounds/arch-wallpaper/archlinux-wallpaper.png'
+picture-uri-dark='file:///usr/share/backgrounds/arch-wallpaper/archlinux-wallpaper.png'
+
 [org.gnome.desktop.interface]
 clock-format='12h'
 clock-show-date=true
