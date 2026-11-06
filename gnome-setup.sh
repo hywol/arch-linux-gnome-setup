@@ -69,11 +69,12 @@ echo "Installing Gaming Support..."
 
 echo "Install and Setup Extras..."
 {
-    pacman -S gnome-shell-extension-gsconnect gnome-shell-extension-arch-update gnome-shell-extension-dash-to-dock gnome-shell-extension-blur-my-shell mcmojave-cursors-git pamac yay sshfs gnome-terminal-transparency limine-mkinitcpio-hook qadwaitadecorations-qt6 papirus-icon-theme papirus-folders ttf-sourcecodepro-nerd ttf-hack-nerd ttf-ubuntu-mono-nerd ttf-roboto-mono-nerd plymouth polkit-gnome yaru-sound-theme system-config-printer python-pysmbc --noconfirm;
+    pacman -S gnome-shell-extension-gsconnect gnome-shell-extension-arch-update gnome-shell-extension-dash-to-dock gnome-shell-extension-blur-my-shell mcmojave-cursors-git pamac yay sshfs gnome-terminal-transparency limine-mkinitcpio-hook qadwaitadecorations-qt6 papirus-icon-theme papirus-folders ttf-sourcecodepro-nerd ttf-hack-nerd ttf-ubuntu-mono-nerd ttf-roboto-mono-nerd plymouth polkit-gnome yaru-sound-theme system-config-printer python-pysmbc ptyxis --noconfirm;
     papirus-folders -C adwaita;
     mkdir /usr/src/MoreWaita;
     git clone https://github.com/somepaulo/MoreWaita /usr/src/MoreWaita;
     sh /usr/src/MoreWaita/install.sh;
+    rm -rf /usr/src/MoreWaita;
 }
 
 echo "Installing Flatpak Necessary Packages..."
