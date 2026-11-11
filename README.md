@@ -1,26 +1,18 @@
 # arch-linux-gnome-setup
 
+Arch Linux with GNOME Installation Kit / 아치 리눅스 + 그놈 데스크탑 설치 키트
+
 ## How to Use
 
 First, use [arch-linux-auto-install](https://github.com/hywol/arch-linux-auto-install) script.
 
+먼저, [arch-linux-auto-install](https://github.com/hywol/arch-linux-auto-install) 스크립트를 사용하세요.
+
 ## How to Custom with your system
 
-This script works well with AMD CPU and AMD Radeon Graphics system.
+This script can install Gaming support.
 
-If you use another GPUs, change Gaming Support Part scripts.
-
-> ### Intel GPUs
->  ```
->  pacman -S vulkan-intel lib32-vulkan- intel-gpu-tools
->  ```
-
-> ### NVIDIA GPUs
->  ```
->  pacman -S egl-wayland nvidia-open-dkms nvidia-utils lib32-nvidia-utils lib32-opencl-nvidia
->  ```
-
-Also, if you using Intel CPU, change limine config file
+if you using Intel CPU, change limine config file.
 
 ```
 KERNEL_CMDLINE[default]+=rw root=/dev/nvme0n1p2 rootflags=subvol=/@ initrd=/intel-ucode.img
@@ -36,6 +28,7 @@ KERNEL_CMDLINE[default]+=rw root=/dev/nvme0n1p2 rootflags=subvol=/@ initrd=/inte
     * GSConnect
  * Necessary Gaming Packages out-of-box
     * Some Default Games
+ * Gaming Support with Steam 
  * GTK-Qt Integrations
  * Fcitx5 IME Included for CJK Language Input
  
