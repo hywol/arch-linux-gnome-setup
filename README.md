@@ -18,6 +18,12 @@ if you using Intel CPU, change limine config file.
 KERNEL_CMDLINE[default]+=rw root=/dev/nvme0n1p2 rootflags=subvol=/@ initrd=/intel-ucode.img
 ```
 
+if you using SATA SSD and Intel CPU, change limine config file.
+
+```
+KERNEL_CMDLINE[default]+=rw root=/dev/sda2 rootflags=subvol=/@ initrd=/intel-ucode.img
+```
+
 ## This Script will Provide
 
  * Default Arch Linux wallpaper [source](https://github.com/thr3d33/archlinux-artwork/blob/main/wallpapers/archlinux/dual-screen/5120x2880/arch-dual-gradient-left-5120x2880.png)
