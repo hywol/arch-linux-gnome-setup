@@ -39,3 +39,7 @@ KERNEL_CMDLINE[default]+=rw root=/dev/sda2 rootflags=subvol=/@ initrd=/intel-uco
  * Fcitx5 IME Included for CJK Language Input
  
 ## Screenshots
+
+![](https://github.com/hywol/hywol/blob/main/image-files/arch-gnome-1.png)
+
+![](https://github.com/hywol/hywol/blob/main/image-files/arch-gnome-2.png)
