@@ -34,7 +34,8 @@ KERNEL_CMDLINE[default]+=rw root=/dev/sda2 rootflags=subvol=/@ initrd=/intel-uco
     * GSConnect
  * Necessary Gaming Packages out-of-box
     * Some Default Games
- * Gaming Support with Steam 
+ * Gaming Support with Steam
+ * Wine Pre-installed
  * GTK-Qt Integrations
  * Fcitx5 IME Included for CJK Language Input
  
