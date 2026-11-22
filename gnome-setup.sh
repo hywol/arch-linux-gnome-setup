@@ -8,7 +8,7 @@ echo "Installing Necessary components..."
 
 echo "Installing Necessary Fonts..."
 {
-    pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-hack ttf-dejavu ttf-liberation ttf-roboto ttf-roboto-mono ttf-ubuntu-font-family inter-font cantarell-fonts adwaita-fonts --noconfirm;
+    pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-hack ttf-dejavu ttf-lato ttf-liberation ttf-roboto ttf-roboto-mono ttf-ubuntu-font-family inter-font cantarell-fonts adwaita-fonts --noconfirm;
 }
 
 echo "Installing GNOME Desktop and Essential Apps..."
