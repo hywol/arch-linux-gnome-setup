@@ -1,6 +1,6 @@
 KERNEL_CMDLINE[default]+=rw root=/dev/nvme0n1p2 rootflags=subvol=/@ initrd=/amd-ucode.img
-KERNEL_CMDLINE[default]+=quiet splash loglevel=3 lockdown=confidentiality
-KERNEL_CMDLINE[default]+=
+KERNEL_CMDLINE[default]+=quiet splash loglevel=3
+KERNEL_CMDLINE[default]+=amd_iommu=on iommu=pt
 
 ROOT_SUBVOLUME_PATH="@"
 ROOT_SNAPSHOTS_PATH="@snapshot"
