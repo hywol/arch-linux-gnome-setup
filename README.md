@@ -8,6 +8,8 @@ First, use [arch-linux-auto-install](https://github.com/hywol/arch-linux-auto-in
 
 먼저, [arch-linux-auto-install](https://github.com/hywol/arch-linux-auto-install) 스크립트를 사용하세요.
 
+z
+
 ## How to Custom with your system
 
 This script can install Gaming support.
@@ -38,6 +40,12 @@ KERNEL_CMDLINE[default]+=rw root=/dev/sda2 rootflags=subvol=/@ initrd=/intel-uco
  * Wine Pre-installed
  * GTK-Qt Integrations
  * Fcitx5 IME Included for CJK Language Input
+
+## To-Dos
+
+[ ] Provide Layout Option with Vanilla-Like, Ubuntu-Like(Bantu), Windows-Like(Friendly)
+
+[ ] Automatically change limine configuration if you using Intel CPUs
  
 ## Screenshots
 
