@@ -8,8 +8,6 @@ First, use [arch-linux-auto-install](https://github.com/hywol/arch-linux-auto-in
 
 먼저, [arch-linux-auto-install](https://github.com/hywol/arch-linux-auto-install) 스크립트를 사용하세요.
 
-z
-
 ## How to Custom with your system
 
 This script can install Gaming support.
