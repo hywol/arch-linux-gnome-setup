@@ -27,6 +27,7 @@ KERNEL_CMDLINE[default]+=rw root=/dev/sda2 rootflags=subvol=/@ initrd=/intel-uco
 ## This Script will Provide
 
  * Default Arch Linux wallpaper [source](https://github.com/thr3d33/archlinux-artwork/blob/main/wallpapers/archlinux/dual-screen/5120x2880/arch-dual-gradient-left-5120x2880.png)
+ * Lato Font Applied
  * Improved Vanilla GNOME Experiences with Blur Effect and additional features
     * MoreWaita icons [source](https://github.com/somepaulo/MoreWaita)
     * McMojave Cursors [source](https://github.com/vinceliuice/McMojave-cursors)
